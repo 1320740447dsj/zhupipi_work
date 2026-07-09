@@ -1,0 +1,1 @@
+可视化代码为：visualize_anomaly.py，可以选择zeor-shot，few-shot；手动修改参数即可，无需训练
