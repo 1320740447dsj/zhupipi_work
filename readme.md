@@ -12,3 +12,12 @@
 |             |                                     |                                                        |
 |             |                                     |                                                        |
 
+
+
+Mvtec数据集：通过网盘分享的文件：mvtec
+链接: https://pan.baidu.com/s/1ZmBZUmwQsDS4-awG03dX7Q 提取码: fe38 
+--来自百度网盘超级会员v6的分享
+
+Visa数据集：通过网盘分享的文件：visa
+链接: https://pan.baidu.com/s/1QXL-4TZ0Rlq2lhqhGnckhA 提取码: 6s55 
+--来自百度网盘超级会员v6的分享
