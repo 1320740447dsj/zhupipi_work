@@ -7,8 +7,8 @@
 | Patchcore   | 复现Patchcore可视化部分             | https://github.com/amazon-science/patchcore-inspection |
 | AA-clip     | 复现实验内容和实验数据              | https://github.com/Mwxinnn/AA-CLIP                     |
 | AdaptCLIP   | 复现实验内容和实验数据              | https://github.com/gaobb/AdaptCLIP                     |
-|             |                                     |                                                        |
-|             |                                     |                                                        |
+| SubspaceAD  | 复现实验内容和实验数据              | https://github.com/CLendering/SubspaceAD               |
+| VisualAD    | 复现实验内容和实验数据              | https://github.com/7HHHHH/VisualAD                     |
 |             |                                     |                                                        |
 |             |                                     |                                                        |
 
