@@ -110,7 +110,7 @@ def test(args):
             results[cls_name[0]]['pr_sp'].extend(text_probs.detach().cpu())
             anomaly_map = torch.stack([torch.from_numpy(gaussian_filter(i, sigma = args.sigma)) for i in anomaly_map.detach().cpu()], dim = 0 )
             results[cls_name[0]]['anomaly_maps'].append(anomaly_map)
-            # visualizer(items['img_path'], anomaly_map.detach().cpu().numpy(), args.image_size, args.save_path, cls_name)
+            visualizer(items['img_path'], anomaly_map.detach().cpu().numpy(), args.image_size, args.save_path, cls_name)
 
     table_ls = []
     image_auroc_list = []
@@ -176,11 +176,11 @@ def test(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser("AnomalyCLIP", add_help=True)
     # paths
-    parser.add_argument("--data_path", type=str, default="./data/visa", help="path to test dataset")
-    parser.add_argument("--save_path", type=str, default='./results/', help='path to save results')
-    parser.add_argument("--checkpoint_path", type=str, default='./checkpoint/', help='path to checkpoint')
+    parser.add_argument("--data_path", type=str, default="../all-lpt/", help="path to test dataset")
+    parser.add_argument("--save_path", type=str, default='../test_output/bad', help='path to save results')
+    parser.add_argument("--checkpoint_path", type=str, default='./checkpoints/private/epoch_15.pth', help='path to checkpoint')
     # model
-    parser.add_argument("--dataset", type=str, default='mvtec')
+    parser.add_argument("--dataset", type=str, default='custom')
     parser.add_argument("--features_list", type=int, nargs="+", default=[6, 12, 18, 24], help="features used")
     parser.add_argument("--image_size", type=int, default=518, help="image size")
     parser.add_argument("--depth", type=int, default=9, help="image size")

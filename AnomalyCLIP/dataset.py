@@ -6,9 +6,13 @@ import numpy as np
 import torch
 import os
 
-def generate_class_info(dataset_name):
+def generate_class_info(dataset_name, custom_class_names=None):
     class_name_map_class_id = {}
-    if dataset_name == 'mvtec':
+    if dataset_name == 'custom':
+        if not custom_class_names:
+            raise ValueError("Custom dataset has no class names in meta.json")
+        obj_list = list(custom_class_names)
+    elif dataset_name == 'mvtec':
         obj_list = ['carpet', 'bottle', 'hazelnut', 'leather', 'cable', 'capsule', 'grid', 'pill',
                     'transistor', 'metal_nut', 'screw', 'toothbrush', 'zipper', 'tile', 'wood']
     elif dataset_name == 'visa':
@@ -32,6 +36,11 @@ def generate_class_info(dataset_name):
         obj_list = ['chest']
     elif dataset_name == 'thyroid':
         obj_list = ['thyroid']
+    elif dataset_name == 'foreign object':
+        # Custom MVTec-like dataset with single class 'object'
+        obj_list = ['foreign object']
+    else:
+        raise ValueError(f"Unsupported dataset: {dataset_name!r}")
     for k, index in zip(obj_list, range(len(obj_list))):
         class_name_map_class_id[k] = index
 
@@ -52,7 +61,7 @@ class Dataset(data.Dataset):
             self.data_all.extend(meta_info[cls_name])
         self.length = len(self.data_all)
 
-        self.obj_list, self.class_name_map_class_id = generate_class_info(dataset_name)
+        self.obj_list, self.class_name_map_class_id = generate_class_info(dataset_name, self.cls_names)
     def __len__(self):
         return self.length
 

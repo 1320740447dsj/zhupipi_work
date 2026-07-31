@@ -115,11 +115,11 @@ def train(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser("AnomalyCLIP", add_help=True)
-    parser.add_argument("--train_data_path", type=str, default="./data/visa", help="train dataset path")
-    parser.add_argument("--save_path", type=str, default='./checkpoint', help='path to save results')
+    parser.add_argument("--train_data_path", type=str, default="../visa", help="train dataset path")
+    parser.add_argument("--save_path", type=str, default='./checkpoint/retrain_visa', help='path to save results')
 
 
-    parser.add_argument("--dataset", type=str, default='mvtec', help="train dataset name")
+    parser.add_argument("--dataset", type=str, default='visa', help="train dataset name")
 
     parser.add_argument("--depth", type=int, default=9, help="image size")
     parser.add_argument("--n_ctx", type=int, default=12, help="zero shot")
@@ -129,7 +129,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--epoch", type=int, default=15, help="epochs")
     parser.add_argument("--learning_rate", type=float, default=0.001, help="learning rate")
-    parser.add_argument("--batch_size", type=int, default=8, help="batch size")
+    parser.add_argument("--batch_size", type=int, default=4, help="batch size")
     parser.add_argument("--image_size", type=int, default=518, help="image size")
     parser.add_argument("--print_freq", type=int, default=1, help="print frequency")
     parser.add_argument("--save_freq", type=int, default=1, help="save frequency")
