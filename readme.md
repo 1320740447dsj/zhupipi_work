@@ -4,13 +4,16 @@
 | ----------- | ----------------------------------- | ------------------------------------------------------ |
 | WinClip     | 复现WinClip可视化部分               | https://github.com/caoyunkang/WinClip#related-research |
 | AnomalyCLIP | 复现AnomalyCLIP可视化部分和训练代码 | https://github.com/zqhang/AnomalyCLIP                  |
-| Patchcore   | 复现Patchcore可视化部分             | https://github.com/amazon-science/patchcore-inspection |
+| Crane       | 复现实验内容和实验数据              | https://github.com/Alireza99Salehi/Crane               |
 | AA-clip     | 复现实验内容和实验数据              | https://github.com/Mwxinnn/AA-CLIP                     |
 | AdaptCLIP   | 复现实验内容和实验数据              | https://github.com/gaobb/AdaptCLIP                     |
 | SubspaceAD  | 复现实验内容和实验数据              | https://github.com/CLendering/SubspaceAD               |
 | VisualAD    | 复现实验内容和实验数据              | https://github.com/7HHHHH/VisualAD                     |
-|             |                                     |                                                        |
-|             |                                     |                                                        |
+| D2Rec       | 复现实验内容和实验数据              | https://github.com/gaobb/D2Rec                         |
+| FoundAD     | 复现实验内容和实验数据              | https://github.com/ymxlzgy/FoundAD                     |
+| MRAD        | 复现实验内容和实验数据              | https://github.com/CROVO1026/MRAD                      |
+| SuperADD    | 复现实验内容和实验数据              | https://github.com/LukasRoom/SuperADD                  |
+| Moeclip     | 复现实验内容和实验数据              | https://github.com/CoCoRessa/MoECLIP                   |
 
 
 
