@@ -1,0 +1,41 @@
+{
+    "datasets_dir": "D:\\sclead\\SuperADD\\experiments\\private\\data",
+    "dino_weights_dir": "./weights/",
+    "models_dir": "D:\\sclead\\SuperADD\\experiments\\private\\models",
+    "results_dir": "D:\\sclead\\SuperADD\\experiments\\private\\outputs",
+    "submissions_dir": "./submissions/",
+    "categories": [
+        "yw"
+    ],
+    "train_fraction": 4,
+    "threshold_fraction": 8,
+    "brightness_augmentation": [
+        0.8,
+        1.2
+    ],
+    "patch_size": 640,
+    "patch_overlap": 128,
+    "backbone": "dinov3_vitb16",
+    "layers": [
+        3,
+        5,
+        7,
+        11
+    ],
+    "max_database_size": 100000,
+    "subsampling_iterations": 100,
+    "threshold_percentile": 95,
+    "threshold_factor": 1.421,
+    "evaluation_downscale": 4,
+    "closing_radius": 26,
+    "closing_angles": 16,
+    "closing_lower_threshold": 0.8,
+    "binary_erosion": 1,
+    "aupro_max_fpr": 0.3,
+    "aupro_num_thresholds": 200,
+    "test_split": [
+        "test_public"
+    ],
+    "save_predictions": true,
+    "evaluate_good_images": true
+}
